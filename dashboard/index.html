@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Market Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="data.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Analytics Data Analyst/ML Engineer</h1>
+        <p>Based on the analysis of 1,500+ vacancies from hh.ru</p>
+        
+        <div class="chart-container">
+            <div class="chart">
+                <h2>Top Required Skills</h2>
+                <canvas id="skillsChart"></canvas>
+            </div>
+            <div class="chart">
+                <h2>Average Salary by Region</h2>
+                <canvas id="salaryChart"></canvas>
+            </div>
+            <div class="chart">
+                <h2>Position Levels</h2>
+                <canvas id="seniorityChart"></canvas>
+            </div>
+            <div class="chart">
+                <h2>Main Responsibilities</h2>
+                <canvas id="responsibilityChart"></canvas>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><span id="date"></span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
